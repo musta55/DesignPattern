@@ -1,3 +1,5 @@
+package Builder;
+
 public class PhoneBuilder {
     private String os;
     private int ram;

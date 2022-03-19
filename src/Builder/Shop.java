@@ -1,6 +1,8 @@
+package Builder;
+
 public class Shop {
     public static void main(String[] args) {
-        Phone p=new PhoneBuilder().setOs("Windows").setProcessor("Octa core").getPhone();
+        Phone p=new PhoneBuilder().setOs("Factory.Windows").setProcessor("Octa core").getPhone();
         System.out.println(p.toString());
     }
 }

@@ -1,3 +1,5 @@
+package Builder;
+
 //builder pattern
 public class Phone {
     private String os;
@@ -18,7 +20,7 @@ public class Phone {
 
     @Override
     public String toString() {
-        return "Phone{" +
+        return "Builder.Phone{" +
                 "os='" + os + '\'' +
                 ", ram=" + ram +
                 ", processor='" + processor + '\'' +
