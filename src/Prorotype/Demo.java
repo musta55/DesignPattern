@@ -5,8 +5,6 @@ public class Demo {
         BookShop bs=new BookShop();
         bs.setShopName("Comdey");
         bs.loadData();
-
-
         BookShop bs2=  bs.clone();
         //By this without loading book data you are getting every books
         bs2.setShopName("Romance");

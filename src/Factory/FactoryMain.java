@@ -1,10 +1,17 @@
 package Factory;
 
+import java.util.Scanner;
+
 public class FactoryMain {
     public static void main(String[] args) {
         OperatingSystemFactory osf=new OperatingSystemFactory();
-        OS obj =osf.getInstance("Closed");
-        obj.spec();
-        //If updates it will not change the client application
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter Operating system type (Open/Closed)");
+
+        String userName = myObj.nextLine();
+
+            OS obj =osf.getInstance(userName);
+            obj.spec();
+
     }
 }
