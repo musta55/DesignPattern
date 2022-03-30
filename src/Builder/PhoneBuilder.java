@@ -33,6 +33,6 @@ public class PhoneBuilder {
         return this;
     }
     public Phone getPhone(){
-        return new Phone("Android",2,"Qualcom",6,3000);
+        return new Phone(os,ram,processor,screenSize,battery);
     }
 }
