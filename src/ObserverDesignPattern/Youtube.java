@@ -2,7 +2,7 @@ package ObserverDesignPattern;
 
 public class Youtube {
     public static void main(String[] args) {
-        Channel telusko =new Channel();
+        Channel natGeo =new Channel();
 
         Subscriber s1=new Subscriber("Musta");
         Subscriber s2=new Subscriber("sakib");
@@ -11,21 +11,21 @@ public class Youtube {
         Subscriber s5=new Subscriber("luke");
 
 
-        telusko.subscribe(s1);
-        telusko.subscribe(s2);
-        telusko.subscribe(s3);
-        telusko.subscribe(s4);
-        telusko.subscribe(s5);
+        natGeo.subscribe(s1);
+        natGeo.subscribe(s2);
+        natGeo.subscribe(s3);
+        natGeo.subscribe(s4);
+        natGeo.subscribe(s5);
 
-        telusko.unSubscribe(s3);
+        natGeo.unSubscribe(s3);
 
-        s1.subscribeChannel(telusko);
-        s2.subscribeChannel(telusko);
-        s3.subscribeChannel(telusko);
-        s4.subscribeChannel(telusko);
-        s5.subscribeChannel(telusko);
+        s1.subscribeChannel(natGeo);
+        s2.subscribeChannel(natGeo);
+        s3.subscribeChannel(natGeo);
+        s4.subscribeChannel(natGeo);
+        s5.subscribeChannel(natGeo);
 
-        telusko.upload("How to learn programming ??");
+        natGeo.upload("Man vs wild new episode");
     }
 
 }
