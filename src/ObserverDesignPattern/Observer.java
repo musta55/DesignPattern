@@ -5,3 +5,4 @@ public interface Observer {
 
     void subscribeChannel(Channel ch);
 }
+
